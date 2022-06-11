@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+input {
+    padding: 2px;
+    font-size: 14px;
+}
+
+.form-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+    background: url("./../img/index.jpg")
+}
+
+.form-container {
+    margin: auto;
+    color: #7bff99;
+}
+
+.form-container form {
+    width: 327px;
+    height: 249px;
+    border: 0.5px solid #dfdada;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    width: 20%;
+    margin: 0 auto;
+    height: 25px;
+    background-color: #5a5af7;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form div {
+    margin: 13px;
+}
+
+.room-container {
+    color: white;
+    width: 350px;
+    background-color: #946d6d
+}
+
+.heading {
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    font-size: 36px;
+    color: #00b500
+}
+
+.room-name {
+    height: 369px;
+    overflow: scroll;
+    margin-top: 30px;
+    background-color: #6c5f5f;
+    border: 2px solid black;
+}
+
+.room p {
+    text-align: center;
+    font-size: 21px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 575px) {
+    body {
+      background-color: black;
+    }
+    .page{
+        flex-direction:column;
+    }
+    .room-container{
+        display:none;
+    }
+
+  }

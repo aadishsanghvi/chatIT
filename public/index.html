@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat It!</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./css/first.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="room-container">
+            <div class="heading">
+                <p>Active Rooms</p>
+            </div>
+            <div class="room-name">
+                <p style="color:red;text-align:center;">No room Yet</p>
+                <!-- <div class="room">
+                    <p>Room1</p>
+                </div>
+                <div class="room">
+                    <p>kumar</p>
+                </div> -->
+            </div>
+            <form action="/chat.html">
+                <div>
+                    <label for="name">Username:</label>
+                    <input type="text" name="username" placeholder="Username" id="name" required autocomplete="off">
+                </div>
+                <div>
+                    <label for="room">Room:</label>
+                    <input id="roomName" style="margin-left:28px" type="text" name="room" placeholder="room name" id="room" required
+                        autocomplete="off">
+                </div>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+        <div class="form-container">
+            <form action="/chat.html">
+                <div>
+                    <label for="name">Username:</label>
+                    <input type="text" name="username" placeholder="Username" id="name" required autocomplete="off">
+                </div>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="./js/first.js"></script>
+</body>
+
+</html>

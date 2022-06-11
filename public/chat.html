@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat It!</title>
+    <link rel="icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="users-container">
+            <div class="image">
+                <img src="./img/favicon.png" alt="logo">
+            </div>
+            <div class="room-name">24x7</div>
+            <div class="user-container">
+                <!-- <div class="users">jayesh</div> -->
+            </div>
+        </div>
+
+        <div class="center-container">
+            <div class="message-container">
+                <!--<div class="messages"><p>This is message</p></div>-->
+            </div>
+            <div class="message-composer">
+                <form id="message-form">
+                    <input id="message" type="text" placeholder="message" required autocomplete="off">
+                    <button>Send</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/client.js"></script>
+</body>
+
+</html>
